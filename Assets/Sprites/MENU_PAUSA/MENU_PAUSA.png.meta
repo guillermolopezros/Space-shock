@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6015491a2e5ffff4e9c23093193373d9
+guid: cc4fda3466081a34fa7b0e60907440d0
 TextureImporter:
   fileIDToRecycleName:
     21300000: MENU_PAUSA_0
@@ -49,30 +49,30 @@ TextureImporter:
     - name: MENU_PAUSA_0
       rect:
         serializedVersion: 2
-        x: 637
-        y: 481
-        width: 436
-        height: 159
+        x: 185
+        y: 740
+        width: 727
+        height: 272
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MENU_PAUSA_1
       rect:
         serializedVersion: 2
-        x: 620
-        y: 301
-        width: 437
-        height: 165
+        x: 1145
+        y: 399
+        width: 721
+        height: 297
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MENU_PAUSA_2
       rect:
         serializedVersion: 2
-        x: 620
-        y: 113
-        width: 437
-        height: 182
+        x: 170
+        y: 128
+        width: 710
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
