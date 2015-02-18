@@ -19,9 +19,9 @@ public class CuboGranada_Script : MonoBehaviour {
 		
 		if (col.transform.tag == "Player") {
 
-						GameControl.NumGranadas++;
+						GameControl.numGranadas++;
 						Destroy (gameObject);
-						Debug.Log (GameControl.NumGranadas);
+						Debug.Log ("Granadas" + GameControl.numGranadas);
 						//	GameControl.CuboGranada--;
 
 				}

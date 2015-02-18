@@ -3,12 +3,12 @@ using System.Collections;
 
 public static class GameControl {
 	
-	public static int CuboTele = 0;
-	public static int CuboComb = 0;
-	public static int CuboGranada = 0;
-	public static int NumGranadas = 0;
-	public static int CuboTime = 0;
-	public static int CuboSupernova = 0;
+	public static int cuboTele = 0;
+	public static int cuboComb = 0;
+	public static int cubosGranadas = 0;
+	public static int numGranadas = 0;
+	public static int cuboTime = 0;
+	public static int cuboSupernova = 0;
 	
 	
 	
