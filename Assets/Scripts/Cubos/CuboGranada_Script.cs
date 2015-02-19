@@ -12,6 +12,8 @@ public class CuboGranada_Script : MonoBehaviour {
 	public int maxposz = 1421;
 	public int minposz = -559;
 
+	public int timeProxCubo = 30;
+
 	bool creaCubo;
 	int cubosEscena = 1;
 	//static int maxGranadas = GameControl.maxGranadas;
@@ -27,10 +29,14 @@ public class CuboGranada_Script : MonoBehaviour {
 	void Update () {
 
 
+
+
 		creaCubo = (cubosEscena < maxGranadas); 		//Condicional para crear cubo
 
+		timeProxCubo -= Time.deltaTime;
 
-		if (cubosEscena < maxGranadas) {
+
+		if (cubosEscena < maxGranadas && timeProxCubo < 0) {
 			pos = new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz));
 			Instantiate (cuboGranada, pos, Quaternion.identity);
 			GameControl.cubosGranadas++;
