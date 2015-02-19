@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CuboGranada_Script : MonoBehaviour {
 
-	public GameObject cuboGranada;
+	public GameObject[] cuboGranada;
 	Vector3 pos;
 	public int maxposx = 853;
 	public int minposx = -1116;
@@ -40,13 +40,15 @@ public class CuboGranada_Script : MonoBehaviour {
 
 
 		if (creaCubo && timeProxCubo < 0) {
+
 			pos = new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz));
-			Instantiate (cuboGranada, pos, Quaternion.identity);
+			timeProxCubo+=3;
+			Instantiate (cuboGranada[0], pos, Quaternion.identity);
 			GameControl.cubosGranadas++;
 			//cubosEscena++;
 			Debug.Log ("CuboGranadas creado.");
 			Debug.Log("Cubos en la escena:" + cubosEscena);
-
+		
 		}
 
 	}
