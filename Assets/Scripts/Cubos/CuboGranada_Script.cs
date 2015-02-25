@@ -14,8 +14,8 @@ public class CuboGranada_Script : MonoBehaviour {
 
 	public float timeProxCubo = 3f;
 
-	int maxGranadas = GameControl.maxGranadas;
-	int cubosEscena = GameControl.cubosGranadas;
+	//int maxGranadas = GameControl.gamecontrol.maxGranadas;
+	//int cubosEscena = GameControl.gamecontrol.cubosGranadas;
 
 	bool creaCubo;
 	//int cubosEscena = 1;
@@ -37,12 +37,12 @@ public class CuboGranada_Script : MonoBehaviour {
 		if (col.transform.tag == "Player") {
 
 			Destroy (gameObject);			
-			GameControl.numGranadas++;
-			GameControl.cubosGranadas--;
-			cubosEscena--;
+			GameControl.gamecontrol.numGranadas++;
+			GameControl.gamecontrol.cubosGranadas--;
+			//cubosEscena--;
 			Debug.Log ("Granada Recogida");
-			Debug.Log ("Granadas: " + GameControl.numGranadas);
-			Debug.Log ("CubosGranada en Escena: " + GameControl.cubosGranadas);
+			Debug.Log ("Granadas: " + GameControl.gamecontrol.numGranadas);
+			Debug.Log ("CubosGranada en Escena: " + GameControl.gamecontrol.cubosGranadas);
 						
 
 				}

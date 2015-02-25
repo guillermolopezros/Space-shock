@@ -14,8 +14,8 @@ public class CreaCubos : MonoBehaviour {
 	
 	public float timeProxCubo = 3f;
 	
-	int maxGranadas = GameControl.maxGranadas;
-	int cubosEscena = GameControl.cubosGranadas;
+	//int maxGranadas = GameControl.gamecontrol.maxGranadas;
+	//int cubosEscena = GameControl.gamecontrol.cubosGranadas;
 	
 	bool creaCubo;
 	//int cubosEscena = 1;
@@ -34,7 +34,7 @@ public class CreaCubos : MonoBehaviour {
 		
 		
 		//if(cubosEscena < maxGranadas){
-		if(GameControl.cubosGranadas < GameControl.maxGranadas){
+		if(GameControl.gamecontrol.cubosGranadas < GameControl.gamecontrol.maxGranadas){
 			creaCubo = true;
 		}else{
 			creaCubo = false;
@@ -46,10 +46,10 @@ public class CreaCubos : MonoBehaviour {
 		if (creaCubo && timeProxCubo < 0) {
 			pos = new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz));
 			Instantiate (cuboGranada, pos, Quaternion.identity);
-			GameControl.cubosGranadas++;
-			cubosEscena++;
+			GameControl.gamecontrol.cubosGranadas++;
+			//cubosEscena++;
 			Debug.Log ("CuboGranadas creado.");
-			Debug.Log("Cubos en la escena:" + cubosEscena);
+			Debug.Log("Cubos en la escena:" + GameControl.gamecontrol.cubosGranadas);
 			
 		}
 		
