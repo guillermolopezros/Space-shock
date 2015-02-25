@@ -5,14 +5,17 @@ public class CuboGranada_Script : MonoBehaviour {
 
 	public GameObject cuboGranada;
 	Vector3 pos;
-	public int maxposx = 853;
-	public int minposx = -1116;
-	public int maxposy = 335;
-	public int minposy = 12;
-	public int maxposz = 1421;
-	public int minposz = -559;
+	int maxposx = 853;
+	int minposx = -1116;
+	int maxposy = 335;
+	int minposy = 12;
+	int maxposz = 1421;
+	int minposz = -559;
 
 	public float timeProxCubo = 3f;
+
+	int maxGranadas = GameControl.maxGranadas;
+	int cubosEscena = GameControl.cubosGranadas;
 
 	bool creaCubo;
 	//int cubosEscena = 1;
@@ -26,29 +29,6 @@ public class CuboGranada_Script : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		int maxGranadas = GameControl.maxGranadas;
-		int cubosEscena = GameControl.cubosGranadas;
-
-
-		if(cubosEscena < maxGranadas){
-			creaCubo = true;
-		}else{
-			creaCubo = false;
-		}
-
-		timeProxCubo -= Time.deltaTime;
-
-
-		if (creaCubo && timeProxCubo < 0) {
-			pos = new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz));
-			Instantiate (cuboGranada, pos, Quaternion.identity);
-			GameControl.cubosGranadas++;
-			//cubosEscena++;
-			Debug.Log ("CuboGranadas creado.");
-			Debug.Log("Cubos en la escena:" + cubosEscena);
-
-		}
-
 	}
 	
 
@@ -59,7 +39,7 @@ public class CuboGranada_Script : MonoBehaviour {
 			Destroy (gameObject);			
 			GameControl.numGranadas++;
 			GameControl.cubosGranadas--;
-			//cubosEscena--;
+			cubosEscena--;
 			Debug.Log ("Granada Recogida");
 			Debug.Log ("Granadas: " + GameControl.numGranadas);
 			Debug.Log ("CubosGranada en Escena: " + GameControl.cubosGranadas);
