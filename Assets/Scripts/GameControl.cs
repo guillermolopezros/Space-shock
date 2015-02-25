@@ -30,6 +30,17 @@ public class GameControl : MonoBehaviour {
 		public void Level2(){
 			Application.LoadLevel ("Terreno");
 		}
+
+	public void Menu(){
+		Application.LoadLevel ("Juego");
+	}
+
+	public void Credit(){
+		Application.LoadLevel ("Credit");
+	}
+	public void Menu_inicialprueba(){
+		Application.LoadLevel ("Menu_inicialprueba");
+	}
 	}
 
 
