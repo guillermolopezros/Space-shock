@@ -7,7 +7,7 @@ public class CreaCubos : MonoBehaviour {
 	Vector3 pos;
 	int maxposx = 853;
 	int minposx = -1116;
-	int maxposy = 335;
+	int maxposy = 5000;
 	int minposy = 12;
 	int maxposz = 1421;
 	int minposz = -559;
@@ -33,7 +33,8 @@ public class CreaCubos : MonoBehaviour {
 		//int cubosEscena = GameControl.cubosGranadas;
 		
 		
-		if(cubosEscena < maxGranadas){
+		//if(cubosEscena < maxGranadas){
+		if(GameControl.cubosGranadas < GameControl.maxGranadas){
 			creaCubo = true;
 		}else{
 			creaCubo = false;

@@ -12,7 +12,8 @@ public static class GameControl {
 
 	public static int cuboTime = 0;
 	public static int cuboSupernova = 0;
-	
+
+
 	
 	
 }
