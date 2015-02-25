@@ -38,10 +38,16 @@ public class GameControl : MonoBehaviour {
 	public void Credit(){
 		Application.LoadLevel ("Credit");
 	}
-	public void Menu_inicialprueba(){
-		Application.LoadLevel ("Menu_inicialprueba");
+	public void Menu_inicial(){
+		Application.LoadLevel ("Menu_inicial");
 	}
+
+	public void Salir(){
+		Application.Quit ();
 	}
+
+
+}
 
 
 	
