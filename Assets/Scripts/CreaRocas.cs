@@ -4,8 +4,8 @@ using System.Collections;
 public class CreaRocas : MonoBehaviour {
 
 
-	public GameObject roca1;
-	//public GameObject plat1,plat2,plat3,plat4;
+	public GameObject[] rocas;
+	public GameObject[] plats;
 	Vector3 pos;
 	int maxposx = 2000;
 	int minposx = 2000;
@@ -14,7 +14,8 @@ public class CreaRocas : MonoBehaviour {
 	int maxposz = 1421;
 	int minposz = -559;
 
-	float timeroca =  GameControl.gamecontrol.timeRoca;
+	public float timeroca =  GameControl.gamecontrol.timeRoca;
+
 
 
 
@@ -25,12 +26,15 @@ public class CreaRocas : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		int queRoca = Random.Range(0,rocas.Length);
 		timeroca -= Time.deltaTime;
-
+		Debug.Log(queRoca);
 		if( timeroca < 0){
 		pos = new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz));
-		Instantiate (roca1, pos, Quaternion.identity);
+		
+	//	int queRoca = Random(0,rocas.Length);
+		Instantiate (rocas[queRoca], pos, Quaternion.identity);
+		
 		timeroca = GameControl.gamecontrol.timeRoca;
 		}
 
