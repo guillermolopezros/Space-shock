@@ -7,11 +7,13 @@ public class GameControl : MonoBehaviour {
 	public static int cuboComb = 0;
 
 	public int maxGranadas = 5;		//numero maximo de granadas
-	public int cubosGranadas = 1;	//Cubos en la escena - Crearemos cubos cuando < maxGranadas
+	public int cubosGranadas = 0;	//Cubos en la escena - Crearemos cubos cuando < maxGranadas
 	public int numGranadas = 0;		//numero de granadas disponibles
 
 	public static int cuboTime = 0;
 	public static int cuboSupernova = 0;
+
+	public float timeRoca = 3f;
 
 
 

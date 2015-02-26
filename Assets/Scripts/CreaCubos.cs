@@ -34,7 +34,7 @@ public class CreaCubos : MonoBehaviour {
 		
 		
 		//if(cubosEscena < maxGranadas){
-		if(GameControl.gamecontrol.cubosGranadas < GameControl.gamecontrol.maxGranadas){
+		if(GameControl.gamecontrol.cubosGranadas <= GameControl.gamecontrol.maxGranadas){
 			creaCubo = true;
 		}else{
 			creaCubo = false;
