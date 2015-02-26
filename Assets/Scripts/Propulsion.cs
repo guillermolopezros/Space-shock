@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Propulsion : MonoBehaviour {
 
+	public int fuerzaPropulsor = 5;
 	// Use this for initialization
 	void Start () {
 	
@@ -12,7 +13,7 @@ public class Propulsion : MonoBehaviour {
 	void Update () {
 	if(Input.GetKey("c")){
 			Vector3 pos = transform.position;
-			pos.y = pos.y +10;
+			pos.y = pos.y + fuerzaPropulsor;
 			transform.position = pos;
 
 		}

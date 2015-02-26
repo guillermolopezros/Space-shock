@@ -28,7 +28,6 @@ public class CreaRocas : MonoBehaviour {
 	void Update () {
 		int queRoca = Random.Range(0,rocas.Length);
 		timeroca -= Time.deltaTime;
-		Debug.Log(queRoca);
 		if( timeroca < 0){
 		pos = new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz));
 		
