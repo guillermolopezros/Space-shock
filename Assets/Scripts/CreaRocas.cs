@@ -26,10 +26,10 @@ public class CreaRocas : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-
+		/*	
 		pos = new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz));
 		Instantiate (, pos, Quaternion.identity);
-
+*/
 
 
 	}
