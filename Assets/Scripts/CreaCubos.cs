@@ -50,7 +50,7 @@ public class CreaCubos : MonoBehaviour {
 			//cubosEscena++;
 			Debug.Log ("CuboGranadas creado.");
 			Debug.Log("Cubos en la escena:" + GameControl.gamecontrol.cubosGranadas);
-			
+
 		}
 		
 	}

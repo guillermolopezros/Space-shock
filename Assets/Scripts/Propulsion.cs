@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Propulsion : MonoBehaviour {
 
-	public int fuerzaPropulsor = 5;
+	public int fuerzaPropulsor = 7;
 	// Use this for initialization
 	void Start () {
 	

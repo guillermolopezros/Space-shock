@@ -39,7 +39,7 @@ public class CreaRocas : MonoBehaviour {
 		timeroca = GameControl.gamecontrol.timeRoca;
 		}
 
-
+		Debug.Log(Time.time);
 
 	}
 }
