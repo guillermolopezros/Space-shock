@@ -17,5 +17,12 @@ public class Propulsion : MonoBehaviour {
 			transform.position = pos;
 
 		}
+
+		if(Input.GetKey("x")){
+			Vector3 pos = transform.position;
+			pos.y = pos.y - fuerzaPropulsor;
+			transform.position = pos;
+			
+		}
 	}
 }
