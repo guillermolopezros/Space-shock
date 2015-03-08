@@ -8,7 +8,8 @@ public class MovRoca : MonoBehaviour {
 
 
 		rigidbody.AddForce(Random.Range(-20000,-10000),0,0);
-		rigidbody.AddTorque(Random.Range(-40,40),Random.Range(-40,40),Random.Range(-40,40));
+		rigidbody.AddTorque(Random.Range(-4000,-2000),Random.Range(4000,2000),Random.Range(20000,40000));
+
 	
 
 	}
@@ -17,7 +18,7 @@ public class MovRoca : MonoBehaviour {
 	void Update () {
 
 		if(rigidbody.transform.position.x < -1500 || rigidbody.transform.position.x > 2000 || rigidbody.transform.position.y < -1000 || rigidbody.transform.position.y > 2000){
-			Destroy(gameObject,11);
+			Destroy(gameObject);
 
 		}
 

@@ -13,7 +13,7 @@ public class GameControl : MonoBehaviour {
 	public static int cuboTime = 0;
 	public static int cuboSupernova = 0;
 
-	public float timeRoca = 0.01f;
+	public float timeRoca = 0.05f;
 
 
 
