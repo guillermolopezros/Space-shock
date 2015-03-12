@@ -26,7 +26,7 @@ public class CreaRocas : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		int queRoca = Random.Range(0,rocas.Length);
+		int queRoca = Random.Range(0,rocas.Length-1);
 		timeroca -= Time.deltaTime;
 		if( timeroca < 0){
 		//pos = new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz));
@@ -35,10 +35,10 @@ public class CreaRocas : MonoBehaviour {
 			Instantiate (rocas[queRoca], new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz)), Quaternion.identity);
 			Instantiate (rocas[queRoca], new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz)), Quaternion.identity);
 			Instantiate (rocas[queRoca], new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz)), Quaternion.identity);
-			Instantiate (rocas[queRoca], new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz)), Quaternion.identity);
+			GameObject roca = (GameObject)Instantiate (rocas[queRoca], new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz)), Quaternion.identity);
 		timeroca = GameControl.gamecontrol.timeRoca;
 		}
-
+		Debug.Log(queRoca);
 		Debug.Log(Time.time);
 
 	}

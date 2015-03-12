@@ -16,7 +16,8 @@ public class Damage : MonoBehaviour {
 
 }
 
-	void OnCollisionEnter(Collider asteroide) {
+	void OnCollisionEnter(Collision
+	                      asteroide) {
 		if (asteroide.transform.tag == "Enemy") {
 			Debug.Log("Estas Muerto");
 		}
