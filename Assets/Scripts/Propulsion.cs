@@ -4,6 +4,8 @@ using System.Collections;
 public class Propulsion : MonoBehaviour {
 
 	public int fuerzaPropulsor = 7;
+
+	public Transform camara;
 	// Use this for initialization
 	void Start () {
 	
@@ -20,7 +22,7 @@ public class Propulsion : MonoBehaviour {
 	}
 
 	if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)){
-		rigidbody.AddForce(new Vector3(fuerzaPropulsor,0,0),ForceMode.Impulse);
+		rigidbody.AddForce(camara.forward*fuerzaPropulsor,ForceMode.Impulse); //left, right y back para el resto (forward)
 		}
 
 	if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.S)){
