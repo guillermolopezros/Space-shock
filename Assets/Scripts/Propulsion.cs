@@ -20,19 +20,19 @@ public class Propulsion : MonoBehaviour {
 	}
 
 	if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)){
-		rigidbody.AddForce(new Vector3(0,0,fuerzaPropulsor),ForceMode.Impulse);
+		rigidbody.AddForce(new Vector3(fuerzaPropulsor,0,0),ForceMode.Impulse);
 		}
 
 	if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.S)){
-			rigidbody.AddForce(new Vector3(0,0,-fuerzaPropulsor),ForceMode.Impulse);
+			rigidbody.AddForce(new Vector3(-fuerzaPropulsor,0,0),ForceMode.Impulse);
 	}
 
 	if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.A)){
-			rigidbody.AddForce(new Vector3(-fuerzaPropulsor,0,0),ForceMode.Impulse);
+			rigidbody.AddForce(new Vector3(0,0,fuerzaPropulsor),ForceMode.Impulse);
 	}
 	
 	if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.D)){
-			rigidbody.AddForce(new Vector3(fuerzaPropulsor,0,0),ForceMode.Impulse);
+			rigidbody.AddForce(new Vector3(0,0,-fuerzaPropulsor),ForceMode.Impulse);
 	}
 
 	}

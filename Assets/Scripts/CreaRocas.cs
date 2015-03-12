@@ -7,12 +7,12 @@ public class CreaRocas : MonoBehaviour {
 	public GameObject[] rocas;
 
 	Vector3 pos;
-	int maxposx = 2000;
-	int minposx = 2000;
-	int maxposy = 2000;
-	int minposy = 12;
-	int maxposz = 1421;
-	int minposz = -559;
+	int maxposx = 5000;
+	int minposx = -5000;
+	int maxposy = 6000;
+	int minposy = 5002;
+	int maxposz = 5421;
+	int minposz = -4559;
 
 	public float timeroca =  GameControl.gamecontrol.timeRoca;
 

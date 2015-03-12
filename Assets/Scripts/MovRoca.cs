@@ -17,7 +17,7 @@ public class MovRoca : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if(rigidbody.transform.position.x < -1500 || rigidbody.transform.position.x > 2000 || rigidbody.transform.position.y < -1000 || rigidbody.transform.position.y > 2000){
+		if(rigidbody.transform.position.x < -10500 || rigidbody.transform.position.x > 10000 || rigidbody.transform.position.y < -10000 || rigidbody.transform.position.y > 10000){
 			Destroy(gameObject);
 
 		}
