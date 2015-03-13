@@ -53,6 +53,6 @@ public class Propulsion : MonoBehaviour {
 			fuelLevel -= consumoFuel * Time.deltaTime;
 	}
 
-		Debug.Log ("COMBUSTIBLE: " + fuelLevel);
+		//Debug.Log ("COMBUSTIBLE: " + fuelLevel);
 	}
 }
