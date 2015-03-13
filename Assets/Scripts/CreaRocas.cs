@@ -38,8 +38,8 @@ public class CreaRocas : MonoBehaviour {
 			GameObject roca = (GameObject)Instantiate (rocas[queRoca], new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz)), Quaternion.identity);
 		timeroca = GameControl.gamecontrol.timeRoca;
 		}
-		Debug.Log(queRoca);
-		Debug.Log(Time.time);
+		//Debug.Log(queRoca);
+		//Debug.Log(Time.time);
 
 	}
 }

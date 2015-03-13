@@ -17,6 +17,8 @@ public class GameControl : MonoBehaviour {
 	public float puntuacion = 0;
 
 	public int fuerzaPropulsor = 10;
+	public float fuelLevel = 100f;
+	public float consumoFuel = 0.5f;
 
 
 

@@ -48,8 +48,8 @@ public class CreaCubos : MonoBehaviour {
 			Instantiate (cuboGranada, pos, Quaternion.identity);
 			GameControl.gamecontrol.cubosGranadas++;
 			//cubosEscena++;
-			Debug.Log ("CuboGranadas creado.");
-			Debug.Log("Cubos en la escena:" + GameControl.gamecontrol.cubosGranadas);
+		//	Debug.Log ("CuboGranadas creado.");
+		//	Debug.Log("Cubos en la escena:" + GameControl.gamecontrol.cubosGranadas);
 
 		}
 		
