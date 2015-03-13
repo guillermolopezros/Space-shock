@@ -16,6 +16,8 @@ public class GameControl : MonoBehaviour {
 	public float timeRoca = 0.5f; // 0.05 va bien
 	public float puntuacion = 0;
 
+	public int fuerzaPropulsor = 10;
+
 
 
 		
