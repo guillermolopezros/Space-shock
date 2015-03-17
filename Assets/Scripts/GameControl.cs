@@ -18,7 +18,7 @@ public class GameControl : MonoBehaviour {
 
 	public int fuerzaPropulsor = 10;
 	public float fuelLevel = 100f;
-	public float consumoFuel = 0.5f;
+	public float consumoFuel = 1f;
 
 
 

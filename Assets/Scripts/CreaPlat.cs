@@ -14,6 +14,8 @@ public class CreaPlat : MonoBehaviour {
 	int minposy = -3002;
 	int maxposz = 5421;
 	int minposz = -4559;
+
+
 	
 	//public float timeroca =  GameControl.gamecontrol.timeRoca;
 	
@@ -25,7 +27,8 @@ public class CreaPlat : MonoBehaviour {
 
 		for(int i = 0; i < 10; i++){
 			int quePlat = Random.Range(0,plats.Length-1);
-			Instantiate (plats[quePlat], new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz)), Quaternion.identity);
+
+			Instantiate (plats[quePlat], new Vector3 (Random.Range (maxposx, minposx), Random.Range (maxposy, minposy), Random.Range (maxposz, minposz)),Random.rotation); //Quaternion.identity);
 		}
 
 		
