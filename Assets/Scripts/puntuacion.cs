@@ -11,8 +11,13 @@ public class puntuacion : MonoBehaviour {
 	}
 
 	void Update(){
+
+		if(GameControl.jugando){
 		texto.text = Mathf.Round(Time.time).ToString ();
 		GameControl.gamecontrol.puntuacion = Mathf.Round (Time.time);
+		} else {
+
+		}
 	}
 
 }

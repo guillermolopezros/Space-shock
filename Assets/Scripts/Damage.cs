@@ -18,6 +18,7 @@ public class Damage : MonoBehaviour {
 
 	void OnCollisionEnter(Collision asteroide) {
 		if (asteroide.transform.tag == "Enemy") {
+			GameControl.jugando = false;
 			Debug.Log("Estas Muerto");
 			GameControl.gamecontrol.puntuacionFinal = GameControl.gamecontrol.puntuacion;
 			Debug.Log(GameControl.gamecontrol.puntuacionFinal);
